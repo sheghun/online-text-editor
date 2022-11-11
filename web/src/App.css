@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box !important;
+}
+
+.App {
+  display: flex;
+  height: 100vh;
+}
+
+.note-lists-icons {
+  border-bottom: solid 1px grey;
+  padding: 0.7rem;
+}
+
+.icon {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  cursor: pointer;
+  width: 7vmin;
+  padding: 0.5rem 0.7rem;
+}
+
+.icon-active {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+.note-lists {
+  border-right: solid 1px grey;
+  flex-basis: 30vw;
+  height: 100%;
+}
+
+.note-lists-file {
+  padding: 0.3rem 0.7rem;
+  cursor: pointer;
+}
+
+.note-lists-file-active {
+  background-color: #1875d1;
+}
+
+.note-page {
+  padding: 1rem 0;
+  flex-basis: 70vw;
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+}
+
+.note-page-icons {
+  width: 100%;
+  border-bottom: solid 1px grey;
+}
+
+.note-page-content {
+  padding: 1rem 2rem;
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 80%;
+}
