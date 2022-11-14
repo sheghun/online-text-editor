@@ -80,13 +80,28 @@ export const initFile = (): IFile => {
         },
         {
           key: "avhhh",
-          text: "from pprint import pprint\n\n\n",
+          text: "from pprint import pprint",
           type: "CODE",
           depth: 0,
           inlineStyleRanges: [
             {
               offset: 0,
-              length: 28,
+              length: 25,
+              style: "CODE",
+            },
+          ],
+          entityRanges: [],
+          data: {},
+        },
+        {
+          key: "498is",
+          text: "import numpy as np\n\n\n",
+          type: "CODE",
+          depth: 0,
+          inlineStyleRanges: [
+            {
+              offset: 0,
+              length: 21,
               style: "CODE",
             },
           ],
@@ -119,13 +134,43 @@ export const initFile = (): IFile => {
         },
         {
           key: "ch9jg",
-          text: "    pprint(f'Hi, {name}')\n\n",
+          text: "    pprint(f'Hi, {name}')",
           type: "CODE",
           depth: 0,
           inlineStyleRanges: [
             {
               offset: 0,
-              length: 27,
+              length: 25,
+              style: "CODE",
+            },
+          ],
+          entityRanges: [],
+          data: {},
+        },
+        {
+          key: "4hqpn",
+          text: "    a = np.array([1,2,3,4,5,6])",
+          type: "CODE",
+          depth: 0,
+          inlineStyleRanges: [
+            {
+              offset: 0,
+              length: 31,
+              style: "CODE",
+            },
+          ],
+          entityRanges: [],
+          data: {},
+        },
+        {
+          key: "5g8ci",
+          text: "    print(a)\n\n",
+          type: "CODE",
+          depth: 0,
+          inlineStyleRanges: [
+            {
+              offset: 0,
+              length: 14,
               style: "CODE",
             },
           ],
@@ -143,7 +188,7 @@ export const initFile = (): IFile => {
         },
         {
           key: "7h1mo",
-          text: "print_hi('Segun')",
+          text: "print_hi('Lucas')",
           type: "CODE",
           depth: 0,
           inlineStyleRanges: [

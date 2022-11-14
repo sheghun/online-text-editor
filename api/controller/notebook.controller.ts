@@ -21,11 +21,12 @@ export const run: RequestHandler = async (req, res, next) => {
   if (req.body.code == "") {
     return res.send("no code supplied");
   }
-  const filename = path.join("./scripts/", `${Date.now()}.py`);
-  await fs.writeFile(filename, req.body.code, { flag: "a" });
+  const filename = path.join(`${Date.now()}.py`);
+  const fullFilePath = path.join("./scripts/", filename);
+  await fs.writeFile(fullFilePath, req.body.code, { flag: "a" });
 
   const output = await new Promise((resolve) => {
-    exec(`python ${filename}`, (err, stdout, stderr) => {
+    exec(`cd scripts; pipenv run python ${filename}`, (err, stdout, stderr) => {
       if (err) {
         return resolve(stderr);
       }
